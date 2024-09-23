@@ -1,0 +1,303 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(58, 58, 58);
+    font-family: sans-serif;
+    color: darkgray;
+    background-image: url("images/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*  Detalle */
+.det-blue {
+    color: dodgerblue;
+}
+
+/*  -    -   -   -   -  */
+
+/*  Navbar  */
+nav {
+    display: flex;
+    height: 2.5em;
+    background-color: rgb(27, 27, 27) ;
+    border-bottom: 1px solid dodgerblue;
+}
+
+ul {
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30em;
+    padding: 5px;
+}
+
+li {
+    display: inline-block;
+}
+
+.nav-link {
+    color: darkgray;
+    text-decoration: none;
+    border-bottom: 1px dashed transparent;
+    transition: all 0.25s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+    text-decoration: none;
+    border-bottom: 1px dashed dodgerblue;
+}
+
+/*  -    -   -   -   -  */
+
+/*  Index   */
+
+.menu {
+    width: 70%;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.menu-index {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(58, 58, 58);
+    padding: 33px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.menu .parrafos {
+    margin-bottom: 80px;
+}
+
+.menu p {
+    text-align: center;
+    margin: 25px;
+}
+
+.menu h2 {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu .div-btn {
+    text-align: center;
+}
+
+.idx-btn {
+    margin: 0 auto;
+    padding: 0.6em;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.idx-btn:hover {
+    background-color: rgb(28, 117, 206);
+}
+
+/*  -    -   -   -   -  */
+
+/*  Login   */
+.menu .form-login {
+    background-image: url("images/fondo.jpg");
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "header header"
+        "email logo"
+        "contraseña logo"
+        "submit logo";
+    margin: 0 auto;
+    padding: 30px;
+    width: 40%;
+    box-shadow: 2px 2px 9px #000;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.719);
+}
+
+.menu .form-login h1 {
+    text-align: center;
+    grid-area: header;
+    margin: 0;
+    padding: 40px;
+}
+
+.errorMessage {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    width: 20em;
+    color: red;
+    grid-column: span 2;
+    margin-bottom: 15px;
+}
+
+label:nth-of-type(1) {
+    grid-area: email;
+}
+
+input[name="email"] {
+    grid-area: email;
+}
+
+label:nth-of-type(2) {
+    grid-area: contraseña;
+}
+
+input[name="password"] {
+    grid-area: contraseña;
+}
+
+input[type="submit"] {
+    grid-area: submit;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px #000;
+}
+
+.menu .input-login {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 2.2em;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    outline: 1px solid gray;
+}
+
+.menu .input-login::placeholder {
+    color: #4d4d4d;
+    padding: 5px;
+}
+
+.menu .input-login:focus {
+    outline: 1px solid dodgerblue;
+}
+
+.menu .input-login[type="submit"] {
+    background-color: dodgerblue;
+    border-radius: 5px;
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.menu .input-login[type="submit"]:hover {
+    background-color: rgb(28, 117, 206);
+}
+
+/*  -    -   -   -   -  */
+
+/*  Listado   */
+
+.wel-user {
+    margin-bottom: 5px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13em;
+    height: 2em;
+    background-color: rgb(27, 27, 27) ;
+    border: 1px solid dodgerblue;
+    border-top: 1px solid rgb(27, 27, 27);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0 auto; 
+}
+
+table {
+    margin: 20px auto;
+    color: gray;
+}
+
+table, td, th {
+    border: 1px solid rgba(128, 128, 128, 0.719);
+    border-collapse: collapse;
+    padding: 0.5em;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(60, 60, 60);
+}
+table tr:nth-child(odd) {
+    background-color: rgb(50, 50, 50);
+}
+
+.cabezal:nth-child(odd) {
+    background-color: rgb(27, 27, 27);
+    color: #f1f1f1;
+}
+
+table a {
+    color: gray;
+    transition: all 0.25s ease;
+}
+
+table a:hover {
+    color: dodgerblue;
+}
+
+/*  -    -   -   -   -  */
+
+/*  Formulario Usuarios   */
+
+.scroll-over {
+    overflow: hidden;
+}
+
+.form-user {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(58, 58, 58);
+    width: 20%;
+    margin: 50px auto;
+    padding: 33px;
+    box-shadow: 2px 2px 9px #000;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.719);
+}
+
+.form-user input, .form-user select {
+    height: 2.2em;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    outline: 1px solid gray;
+}
+
+.form-user input[type="submit"] {
+    background-color: dodgerblue;
+    border-radius: 5px;
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.form-user input[type="submit"]:hover {
+    background-color: rgb(28, 117, 206);
+}
+
+/*  -    -   -   -   -  */
